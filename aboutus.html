@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <title>DiMario's</title>
+        <title>DiMario's - About Us</title>
+        <meta name="description" content="DiMario's - Founded in Bray in 2020, DiMario's offers a wide range of classic and very innovative gourmet pizzas to create a distinctive and contemporary eating style for you to enjoy at home">
+        <meta name="keywords" content="Pizza in Bray,Bray,Bray Sea Front,Dublin,Artisan Food,Italian Pizza,Italian Food,Vegan Food,Vegetarian Food,">
+        <meta name="author" content="Jennifer Feckler">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
@@ -11,20 +14,34 @@
 
     <body>   
         <header>
-            <nav class="navbar">
-            <div class="logo" onclick="document.location='index.html'">
-                <h1>DiMario's </h1></div>
+            <nav class="navbar" id="navbar">
+                <div class="logo" onclick="document.location='index.html'">
+                    <h1>DiMario's </h1></div>
             
-                <ul class="navlinks" id="navlinks">
-                    </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://deliveroo.ie/" target="_blank" >Order</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a class="current" href="aboutus.html">About Us</a></li>
-                    <li><a href="#footer">Contact Us</a></li>
-                  </ul>
+                    <a href=# class=toggle-button>
+                            <img class=bars src="bars.svg" alt="Hamburger Menu">
+                    </a>
+            
+                    <div class="navbar-links">
+                        <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://deliveroo.ie/" target="_blank" >Order <img class=deliveroo src="deliveroo.svg" alt="Deliveroo Icon"></a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a class="current" href="aboutus.html">About Us</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                        </ul>
+                    </div>
             </nav>
+            <script>
+                const toggleButton = document.getElementsByClassName('toggle-button')[0]
+                const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+                
+                toggleButton.addEventListener('click', () => {
+                    navbarLinks.classList.toggle('active');
+                })
+                
+                </script>
         </header> 
 
             <div class="hero_about"></div>

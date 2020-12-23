@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <title>DiMario's</title>
+        <title>DiMario's - Menu</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="DiMario's - A wide range of classic and very innovative gourmet pizzas to create a distinctive and contemporary eating style for you to enjoy at home">
+        <meta name="keywords" content="Pizza in Bray,Bray,Bray Sea Front,Dublin,Artisan Food,Italian Pizza,Italian Food,Vegan Food,Vegetarian Food,">
+        <meta name="author" content="Jennifer Feckler">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
@@ -11,20 +15,34 @@
 
     <body>   
         <header>
-            <nav class="navbar">
-            <div class="logo" onclick="document.location='index.html'">
-                <h1>DiMario's </h1></div>
+            <nav class="navbar" id="navbar">
+                <div class="logo" onclick="document.location='index.html'">
+                    <h1>DiMario's </h1></div>
             
-                <ul class="navlinks" id="navlinks">
-                    </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://deliveroo.ie/" target="_blank" >Order</a></li>
-                    <li><a class="current" href="menu.html">Menu</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="#footer">Contact Us</a></li>
-                  </ul>
+                    <a href=# class=toggle-button>
+                            <img class=bars src="bars.svg" alt="Hamburger Menu">
+                    </a>
+            
+                    <div class="navbar-links">
+                        <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://deliveroo.ie/" target="_blank" >Order <img class=deliveroo src="deliveroo.svg" alt="Deliveroo Icon"></a></li>
+                        <li><a class="current" href="menu.html">Menu</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                        </ul>
+                    </div>
             </nav>
+            <script>
+                const toggleButton = document.getElementsByClassName('toggle-button')[0]
+                const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+                
+                toggleButton.addEventListener('click', () => {
+                    navbarLinks.classList.toggle('active');
+                })
+                
+                </script>
         </header> 
 
         <div  class="allergy">
@@ -204,7 +222,7 @@
                 <img class="imgdessert_1" src="dessert_1.jpg" alt="Dessert Pizza Chocolate">
                 <p><b>Chocolate Dessert Pizza</b><br><br>
                     With a simple thin crust, a cream cheese based “white pizza sauce”, lots of high quality chocolate<br><br><br>
-               
+                    <img class="nut" src="nut.svg" alt="Nuts">
                     <img class="gluten" src="gluten.svg" alt="Gluten">
                </p>
             </div>
@@ -212,7 +230,7 @@
                 <img class="imgdessert_2" src="dessert_2.jpg" alt="Dessert Pizza Fruits">
                 <p><b>Fruity Dessert Pizza</b><br><br>
                     With a simple thin crust, a cream cheese based “white pizza sauce”, lots of high quality fruits on top<br><br><br>
-    
+                    <img class="nut" src="nut.svg" alt="Nuts">
                     <img class="gluten" src="gluten.svg" alt="Gluten">
                 </p>
             </div>

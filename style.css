@@ -17,6 +17,7 @@ html,body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #14181b;
     background-image: url("nav_background.jpg");
     background-size: cover;
     background-position: 10% 15%;
@@ -341,11 +342,9 @@ h2 {
     box-shadow:  0 0 18px #262626;
  }
 
- /*History*/
-
   .history, .philosophy, .food {
     width: 80%;
-    overflow: auto;
+    height: 450px;
     margin: auto;
     display: flex; 
     margin-bottom: 50px;
@@ -1076,8 +1075,10 @@ h2{
      }
 
      .images {
-         width: 95%;
+         width: 100%;
          overflow: hidden;
+         background-color: #262626;
+         background-image: none;
      }
 
 
